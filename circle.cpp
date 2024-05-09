@@ -48,7 +48,7 @@ int SDL_main(int argc, char* argv[]) {
     SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
 
     // Draw a circle
-    drawCircle(renderer, 320, 240, 100);
+    drawCircle(renderer, 320, 240, 200);
 
     // Present the renderer
     SDL_RenderPresent(renderer);
