@@ -41,11 +41,11 @@ int SDL_main(int argc, char* argv[]) {
     }
 
     // Clear the renderer
-    SDL_SetRenderDrawColor(renderer, 255, 255, 255, 255);
+    SDL_SetRenderDrawColor(renderer, 255, 0, 255, 255);
     SDL_RenderClear(renderer);
 
     // Set drawing color to blue
-    SDL_SetRenderDrawColor(renderer, 0, 0, 255, 255);
+    SDL_SetRenderDrawColor(renderer, 255, 0, 0, 255);
 
     // Draw a circle
     drawCircle(renderer, 320, 240, 200);

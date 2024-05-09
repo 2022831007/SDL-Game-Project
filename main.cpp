@@ -8,7 +8,7 @@
 bool gameIsRunning = false;
 SDL_Window *window = NULL;
 SDL_Renderer *renderer = NULL;
-int redColorCode = 0;
+//int redColorCode = 0;
 Uint32 startTime;
 Uint32 currentTime;
 
@@ -69,7 +69,7 @@ void process_input(void)
 void incrementVariable()
 {
     // increase redColorCode & reset after max 8 bit value
-    redColorCode = redColorCode + 25;
+     int redColorCode = redColorCode + 25;
     if (redColorCode >= 256)
     {
         redColorCode = 0;
@@ -93,7 +93,7 @@ void update(void)
 void draw()
 {
     // Set the render draw color (R, G, B, A)
-    SDL_SetRenderDrawColor(renderer, redColorCode, 20, 205, 255);
+    SDL_SetRenderDrawColor(renderer, 0, 255, 0, 255);
 
     // Clear the renderer with the specified draw color
     SDL_RenderClear(renderer);
